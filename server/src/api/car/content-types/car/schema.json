@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "cars",
+  "info": {
+    "singularName": "car",
+    "pluralName": "cars",
+    "displayName": "car"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "carTitle": {
+      "type": "string"
+    },
+    "carDescription": {
+      "type": "blocks"
+    },
+    "carImage": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "carMarque": {
+      "type": "string"
+    },
+    "carModel": {
+      "type": "string"
+    },
+    "pricePerDay": {
+      "type": "string",
+      "required": false
+    }
+  }
+}

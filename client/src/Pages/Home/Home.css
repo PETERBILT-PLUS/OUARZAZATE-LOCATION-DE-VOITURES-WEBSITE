@@ -1,0 +1,30 @@
+div.home {
+    min-height: 100vh;
+}
+
+section.first-section {
+    height: 100vh;
+    background-image: url("../../assets/dacia1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: darken;
+    background-color: rgba(0, 0, 0, 0.20);
+}
+
+section.first-section div h1 {
+    color: var(--primary-blue);
+}
+
+section.second-section div div.service-info h1 {
+    color: var(--accent-red);
+}
+
+section.second-section div div.service-info p {
+    color: var(--dark-gray);
+    font-weight: 500;
+}
+
+section.third-section h1 {
+    color: var(--primary-blue);
+}

@@ -1,0 +1,13 @@
+footer.footer {
+    background-color: var(--dark-gray);
+}
+
+footer a {
+    color: #fefefe;
+    font-size: 1.05em;
+    font-weight: 400;
+}
+
+a.active {
+    color: var(--primary-blue);
+}
