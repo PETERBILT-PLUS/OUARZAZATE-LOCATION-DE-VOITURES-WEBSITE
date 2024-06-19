@@ -13,7 +13,7 @@ export const useFetchCars = () => {
                 const res: AxiosResponse<any, any> = await axios.get("http://localhost:1337/api/cars?populate=*");
                 setData(res.data.data);
                 setLoading(false);
-            } catch (err) {
+            } catch (err: any) {
                 setError(err);
                 setLoading(false);
             }
