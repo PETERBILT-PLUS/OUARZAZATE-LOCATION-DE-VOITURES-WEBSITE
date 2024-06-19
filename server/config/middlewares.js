@@ -5,7 +5,7 @@ module.exports = [
     config: {
       enabled: true,
       headers: '*',
-      origin: ['*'],  // Allows requests from any origin
+      origin: [process.env.CLIENT, "http://localhost:5173"],  // Allows requests from any origin
     },
   },
   'strapi::security',
