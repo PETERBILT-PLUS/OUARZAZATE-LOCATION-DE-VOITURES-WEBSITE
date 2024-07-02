@@ -5,3 +5,7 @@ div.card {
 div.card:hover {
     transform: scale(1.030);
 }
+
+p.price {
+    color: var(--primary-blue);
+}

@@ -3,14 +3,14 @@ import axios, { AxiosResponse } from "axios";
 
 export const useFetchCars = () => {
     const [data, setData] = useState<any[]>([]);
-    const [loading, setLoading] = useState<boolean>(true);
+    const [loading, setLoading] = useState<boolean>(false);
     const [error, setError] = useState<any>(null);
 
     useEffect(() => {
         const fetchData = async () => {
             setLoading(true);
             try {
-                const res: AxiosResponse<any, any> = await axios.get("http://localhost:1337/api/cars?populate=*");
+                const res: AxiosResponse<any, any> = await axios.get("https://ouarzazate-location-de-voitures-website.onrender.com/api/cars?populate=*");
                 console.log(res.data);
                 setData(res.data.data);
                 setLoading(false);

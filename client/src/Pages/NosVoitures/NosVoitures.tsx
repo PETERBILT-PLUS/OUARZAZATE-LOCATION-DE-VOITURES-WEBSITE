@@ -26,21 +26,23 @@ function NosVoitures() {
         <div className="min-h-screen bg-slate-100">
             <section className="py-16">
                 <div className="container mx-auto px-4">
-                    <h1 className="text-4xl font-bold text-center mb-8">Nos Voitures</h1>
+                    <h1 className="text-4xl font-bold text-center mb-8 pt-2 pb-6">Nos Voitures</h1>
                     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
                         {data.map(car => (
-                            <div key={car.id} className="card bg-white flex flex-col justify-between items-start shadow-lg rounded-lg overflow-hidden h-96 md:h-auto">
+                            <div key={car.id} className="card bg-white flex flex-col justify-between items-start shadow-lg rounded-lg overflow-hidden md:h-auto">
                                 <img
-                                    src={`http://localhost:1337${car.attributes.carImage.data.attributes.url}`}
+                                    src={`https://ouarzazate-location-de-voitures-website.onrender.com${car.attributes.carImage.data.attributes.url}`}
                                     alt={car.attributes.carTitle}
-                                    className="w-full h-56 object-cover"
+                                    className="w-full h-56 md:h-auto object-cover"
                                 />
-                                <div className="p-4">
-                                    <h2 className="text-2xl font-semibold mb-2">{car.attributes.carTitle}</h2>
-                                    <p className="text-gray-700 mb-4">{car.attributes.carDescription[0].children[0].text}</p>
-                                    <p className="text-blue-500 font-bold mb-4">Prix: {car.attributes.pricePerDay} DH</p>
+                                <div className="p-6">
+                                    <h2 className="text-2xl font-semibold mb-2 text-gray-800">{car.attributes.carTitle}</h2>
+                                    <p className="text-gray-600 mb-2">{car.attributes.carDescription[0].children[0].text}</p>
+                                    <p className="text-gray-600 mb-4"><strong>Marque: </strong>{car.attributes.carMarque}</p>
+                                    <p className="price font-bold text-xl mb-4">Prix: {car.attributes.pricePerDay} DH</p>
                                 </div>
                             </div>
+
                         ))}
                     </div>
                 </div>
