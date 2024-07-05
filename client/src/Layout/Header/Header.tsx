@@ -14,11 +14,12 @@ function Header() {
     return (
         <header className="bg-white shadow-md">
 
+            {/* Top Navigation */}
             <div className="header-top w-full py-2">
                 <div className="container mx-auto flex flex-row justify-between items-center px-4">
                     <div className="flex flex-row items-center gap-6">
-                        <h2 className="text-white text-base"><span className="span-top">Tél: </span>0624736590</h2>
-                        <h3 className="text-white text-base"><span className="span-top">E-mail: </span> email@gmail.com</h3>
+                        <h2 className="text-white text-sm md:text-base"><span className="span-top">Tél: </span>0524884757</h2>
+                        <h3 className="text-white text-sm md:text-base"><span className="span-top">E-mail: </span>Yourlocation80@gmail.com</h3>
                     </div>
                     <div className="text-white text-base hidden md:flex flex-row justify-evenly items-center gap-5">
                         <span>Suivez-nous:</span>

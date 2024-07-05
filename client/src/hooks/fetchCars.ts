@@ -10,7 +10,7 @@ export const useFetchCars = () => {
         const fetchData = async () => {
             setLoading(true);
             try {
-                const res: AxiosResponse<any, any> = await axios.get("https://ouarzazate-location-de-voitures-website.onrender.com/api/cars?populate=*");
+                const res: AxiosResponse<any, any> = await axios.get("http://localhost:1337/api/cars?populate=*");
                 console.log(res.data);
                 setData(res.data.data);
                 setLoading(false);

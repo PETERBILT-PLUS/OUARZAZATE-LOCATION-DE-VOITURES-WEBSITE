@@ -15,7 +15,7 @@ function APropos() {
                 </p>
 
                 <p className="leading-6 text-gray-700 pb-6">
-                    Merci de choisir [Nom de l'Entreprise] pour vos besoins de location de voitures. Nous sommes impatients de vous servir et de vous accompagner dans tous vos déplacements.
+                    Merci de choisir <mark>Your Location</mark> pour vos besoins de location de voitures. Nous sommes impatients de vous servir et de vous accompagner dans tous vos déplacements.
                 </p>
             </div>
         </section>

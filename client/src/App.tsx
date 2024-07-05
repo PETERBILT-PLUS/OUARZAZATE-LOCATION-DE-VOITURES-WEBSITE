@@ -8,7 +8,7 @@ import ConditionGeneral from "./Pages/ConditionGeneral/ConditionGeneral.tsx";
 import Contact from "./Pages/Contact/Contact.tsx";
 
 function App() {
-
+  
   const router: any = createBrowserRouter(createRoutesFromElements(
     <Route path="/" element={<Layout />}>
       <Route index element={<Home />} />

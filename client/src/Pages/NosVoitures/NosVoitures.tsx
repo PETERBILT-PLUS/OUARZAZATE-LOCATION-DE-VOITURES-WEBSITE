@@ -31,15 +31,16 @@ function NosVoitures() {
                         {data.map(car => (
                             <div key={car.id} className="card bg-white flex flex-col justify-between items-start shadow-lg rounded-lg overflow-hidden md:h-auto">
                                 <img
-                                    src={`https://ouarzazate-location-de-voitures-website.onrender.com${car.attributes.carImage.data.attributes.url}`}
+                                    src={`http://localhost:1337${car.attributes.carImage.data.attributes.url}`}
                                     alt={car.attributes.carTitle}
                                     className="w-full h-56 md:h-auto object-cover"
                                 />
                                 <div className="p-6">
                                     <h2 className="text-2xl font-semibold mb-2 text-gray-800">{car.attributes.carTitle}</h2>
-                                    <p className="text-gray-600 mb-2">{car.attributes.carDescription[0].children[0].text}</p>
-                                    <p className="text-gray-600 mb-4"><strong>Marque: </strong>{car.attributes.carMarque}</p>
-                                    <p className="price font-bold text-xl mb-4">Prix: {car.attributes.pricePerDay} DH</p>
+                                    <p className="text-gray-600 mb-2"><mark className="px-1">{car.attributes.carDescription[0].children[0].text}</mark></p>
+                                    <p className="text-gray-600 mb-2"><strong>Marque: </strong>{car.attributes.carMarque}</p>
+                                    <p className="text-gray-600 mb-2"><strong>Model: </strong>{car.attributes.carModel}</p>
+                                    <p className="price font-bold text-xl my-4">Prix: {car.attributes.pricePerDay} DH</p>
                                 </div>
                             </div>
 

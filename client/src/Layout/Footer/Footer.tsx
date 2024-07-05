@@ -30,9 +30,9 @@ function Footer() {
                 {/* Third Division */}
                 <div className="lg:w-1/4 flex flex-col justify-start items-center mb-8 lg:mb-0" style={{ height: "100%" }}>
                     <h2 className="text-xl font-semibold mb-4 text-slate-100">Contactez-nous</h2>
-                    <p className="text-slate-100 py-1">Adresse: 123 Rue de l'Exemple, Paris, France</p>
-                    <p className="text-slate-100 py-1">Téléphone: 01 23 45 67 89</p>
-                    <p className="text-slate-100 py-1">Email: contact@locationvoiture.fr</p>
+                    <p className="text-slate-100 py-1">Adresse: N 463 Lot elmassira - Ouarzazate</p>
+                    <p className="text-slate-100 py-1">Téléphone: 05 24 88 47 58</p>
+                    <p className="text-slate-100 py-1">Email: Yourlocation80@gmail.com</p>
                 </div>
 
                 {/* Fourth Division */}
